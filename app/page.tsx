@@ -62,11 +62,11 @@ export default function OtletConsulting() {
               We analyze your current software stack and build custom solutions<br></br>to reduce costs and improve efficiency for small businesses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-white hover:ring hover:text-black transition duration-300">
+              <a href="/contact" className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-white hover:ring hover:text-black transition">
                 Schedule Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
-              <a href="#process" className="inline-flex items-center justify-center border-1 border-black text-slate-900 px-8 py-4 rounded-md text-lg font-medium hover:bg-black hover:text-white hover:ring transition duration-300">
+              <a href="#process" className="inline-flex items-center justify-center border-1 border-black text-slate-900 px-8 py-4 rounded-md text-lg font-medium hover:bg-black hover:text-white hover:ring transition">
                 Learn Our Process
               </a>
             </div>

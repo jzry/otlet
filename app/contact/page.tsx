@@ -13,14 +13,14 @@ export default function GetStarted() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
     setSubmitted(true);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -233,7 +233,7 @@ export default function GetStarted() {
 
                   {/* Submit Button */}
                   <button
-                    onClick={handleSubmit}
+                    // onClick={handleSubmit}
                     className="cursor-pointer w-full bg-black text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-white hover:text-black hover:ring transition duration-300 inline-flex items-center justify-center"
                   >
                     Schedule Consultation
