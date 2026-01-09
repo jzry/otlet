@@ -52,7 +52,7 @@ export default function OtletConsulting() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-5xl md:text-5xl font-bold font-serif text-black leading-tight mb-6">
@@ -61,12 +61,53 @@ export default function OtletConsulting() {
             <p className="text-3xl text-xl text-slate-800 mb-8 leading-relaxed">
               We analyze your current software stack and build custom solutions<br></br>to reduce costs and improve efficiency for small businesses.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a href="/contact" className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-white hover:ring hover:text-black transition">
                 Schedule Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a href="#process" className="inline-flex items-center justify-center border-1 border-black text-slate-900 px-8 py-4 rounded-md text-lg font-medium hover:bg-black hover:text-white hover:ring transition">
+                Learn Our Process
+              </a>
+            </div>
+            <div className="mt-8">
+              <img 
+                src="/images/wpb.jpg" 
+                alt="Otlet Consulting" 
+                className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/wpb.jpg" 
+            alt="Otlet Consulting" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-white/80"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto w-full">
+          <div className="max-w-5xl mx-auto text-center">
+            <h1 className="text-5xl md:text-5xl font-bold font-serif text-black leading-tight mb-6">
+              Reduce software costs by up to 70%
+            </h1>
+            <p className="text-3xl text-xl text-slate-800 mb-8 leading-relaxed">
+              We analyze your current software stack and build custom solutions to reduce costs and improve efficiency.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/contact" className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-white hover:ring hover:text-black transition">
+                Schedule Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a href="#process" className="inline-flex items-center justify-center border-1 border-black bg-white text-slate-900 px-8 py-4 rounded-md text-lg font-medium hover:bg-black hover:text-white hover:ring-black transition">
                 Learn Our Process
               </a>
             </div>
@@ -191,39 +232,33 @@ export default function OtletConsulting() {
       <section id="industries" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Industries We Serve</h2>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Who We Help</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Specialized expertise in operations with complex software needs.
+              We work with service-based businesses that rely on multiple software tools to manage their operations.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Veterinary Clinics",
-                items: ["Practice management", "Inventory tracking", "Client portals", "Appointment scheduling"]
-              },
-              {
-                title: "Equestrian Facilities",
-                items: ["Boarding management", "Training schedules", "Billing systems", "Client communication"]
-              },
-              {
-                title: "Private Practices",
-                items: ["Patient management", "Scheduling systems", "Billing & invoicing", "Record keeping"]
-              }
-            ].map((industry, idx) => (
-              <div key={idx} className="curbg-white p-8 rounded-lg border border-gray-200">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">{industry.title}</h3>
-                <ul className="space-y-2">
-                  {industry.items.map((item, i) => (
-                    <li key={i} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-600">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">Small to Medium Businesses</h3>
+              <p className="text-slate-600">
+                Companies with 5-50 employees spending $3K+ annually on software subscriptions and looking to optimize costs.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">Service Providers</h3>
+              <p className="text-slate-600">
+                Businesses managing client relationships, appointments, billing, and communications across multiple platforms.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">Growing Operations</h3>
+              <p className="text-slate-600">
+                Organizations outgrowing their current systems and needing scalable solutions without enterprise-level costs.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -255,7 +290,7 @@ export default function OtletConsulting() {
               <span className="text-2xl font-light text-slate-700 ml-1">Consulting</span>
             </div>
             <div className="text-slate-600">
-              © 2024 Otlet Consulting LLC. All rights reserved.
+              © 2026 Otlet Consulting LLC. All rights reserved.
             </div>
           </div>
         </div>
