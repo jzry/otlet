@@ -11,11 +11,14 @@ export default function OtletConsulting() {
       <nav className="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold font-serif text-slate-900">Otlet</span>
-              <span className="text-2xl font-light font-serif text-slate-600 ml-1">Consulting</span>
+            <div className="flex items-center gap-1">
+              <img src="/images/logo.png" alt="Otlet Consulting Logo" className="h-6 w-auto" />
+              <div className="flex items-center">
+                <span className="text-2xl font-bold font-serif text-slate-900">Otlet</span>
+                <span className="text-2xl font-light font-serif text-slate-600 ml-1">Consulting</span>
+              </div>
             </div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-3">
               <a href="#services" className="bg-white text-slate-900 px-2 py-2 rounded-md hover:bg-gray-100 transition">Services</a>
@@ -285,9 +288,12 @@ export default function OtletConsulting() {
       <footer className="bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <span className="text-2xl font-bold text-slate-900">Otlet</span>
-              <span className="text-2xl font-light text-slate-700 ml-1">Consulting</span>
+            <div className="flex items-center gap-1">
+              <img src="/images/logo.png" alt="Otlet Consulting Logo" className="h-6 w-auto" />
+              <div className="flex items-center">
+                <span className="text-2xl font-bold font-serif text-slate-900">Otlet</span>
+                <span className="text-2xl font-light font-serif text-slate-600 ml-1">Consulting</span>
+              </div>
             </div>
             <div className="text-slate-600">
               © 2026 Otlet Consulting LLC. All rights reserved.
